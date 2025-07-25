@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Let Down - Radiohead</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #ff4d6d;
+      margin-bottom: 20px;
+    }
+
+    #lyrics {
+      margin-top: 30px;
+      font-size: 1.2em;
+      line-height: 1.8;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      white-space: pre-wrap;
+    }
+
+    .btn {
+      background-color: #ff4d6d;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      margin: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e03a55;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Let Down - Radiohead</h1>
+
+  <!-- Audio Player -->
+  <audio id="audio" controls>
+    <source src="https://file-examples.com/storage/fe3a2d1112f78198f11b83b/2017/11/file_example_MP3_700KB.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <br>
+
+  <!-- Buttons -->
+  <button class="btn" onclick="playMusic()">Putar Musik</button>
+  <button class="btn" onclick="pauseMusic()">Pause Musik</button>
+  <button class="btn" onclick="showNextLine()">Tampilkan Lirik</button>
+
+  <!-- Lyrics Container -->
+  <div id="lyrics"></div>
+
+  <script>
+    const lines = [
+      "Transport, motorways and tramlines",
+      "Starting and then stopping",
+      "Taking off and landing",
+      "The emptiest of feelings",
+      "",
+      "Disappointed people clinging on to bottles",
+      "And when it comes it's so disappointing",
+      "",
+      "Let down and hanging around",
+      "Crushed like a bug in the ground",
+      "Let down and hanging around",
+      "",
+      "Shell smashed, juices flowing",
+      "Wings twitch
